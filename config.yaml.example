@@ -1,0 +1,13 @@
+# Example configuration for threatfox-checker
+# Define your queries below
+
+queries:
+  - name: fake-updates-malware
+    type: malware_name    
+    value: js.fakeupdates
+    limiter: 100  # Get 100 most recent indicators for js.fakeupdates
+
+  - name: smartapesg-tag
+    type: tag
+    value: SmartApeSG
+    limiter: 100  # Get 100 most recent indicators tagged with SmartApeSG
